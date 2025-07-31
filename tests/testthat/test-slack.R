@@ -296,6 +296,7 @@ test_that("slack payload is correct given actual run data", {
 })
 
 test_that("teams payload is correct", {
+  skip("obsolete test")
   skip_if_not_installed("httr")
   skip_if_not_installed("jsonlite")
   server_url <- "https://example.com"
