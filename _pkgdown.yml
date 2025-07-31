@@ -1,7 +1,7 @@
 url: https://www.vaccineimpact.org/orderly/
 
 template:
-  bootstrap: 4
+  bootstrap: 5
 
 reference:
   - title: Basic use
