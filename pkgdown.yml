@@ -1,5 +1,5 @@
-pandoc: 2.7.3
-pkgdown: 2.0.7
+pandoc: 3.1.11
+pkgdown: 2.1.3
 pkgdown_sha: ~
 articles:
   bundles: bundles.html
@@ -7,8 +7,7 @@ articles:
   orderly: orderly.html
   patterns: patterns.html
   remote: remote.html
-last_built: 2023-06-21T10:50Z
+last_built: 2025-07-31T13:45Z
 urls:
   reference: https://www.vaccineimpact.org/orderly/reference
   article: https://www.vaccineimpact.org/orderly/articles
-
