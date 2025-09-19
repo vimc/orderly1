@@ -3,14 +3,14 @@
 
 <!-- badges: start -->
 [![Project Status: Active – The project has reached a stable, usable state and is being actively developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)
-[![R build status](https://github.com/vimc/orderly/workflows/R-CMD-check/badge.svg)](https://github.com/vimc/orderly/actions)
-[![codecov.io](https://codecov.io/github/vimc/orderly/coverage.svg?branch=master)](https://codecov.io/github/vimc/orderly?branch=master)
-[![CodeFactor](https://www.codefactor.io/repository/github/vimc/orderly/badge)](https://www.codefactor.io/repository/github/vimc/orderly)
+[![R build status](https://github.com/vimc/orderly1/workflows/R-CMD-check/badge.svg)](https://github.com/vimc/orderly1/actions)
+[![codecov.io](https://codecov.io/github/vimc/orderly1/coverage.svg?branch=master)](https://codecov.io/github/vimc/orderly1?branch=master)
+[![CodeFactor](https://www.codefactor.io/repository/github/vimc/orderly1/badge)](https://www.codefactor.io/repository/github/vimc/orderly1)
 [![](https://www.r-pkg.org/badges/version/orderly)](https://cran.r-project.org/package=orderly)
 <!-- badges: end -->
 
 > [!WARNING]
-> This is an archived copy of the original version of orderly, version 1, available as a package `orderly1`. The information below is for historical reference, and the package is available for use with historical orderly source repositories.  New projects should use [`orderly` version 2](https://mrc-ide.github.io/orderly2/); see the [migration guide](https://mrc-ide.github.io/orderly2/articles/migrating.html) for possible next steps.
+> This is an archived copy of the original version of orderly, version 1, available as a package `orderly1`. The information below is for historical reference, and the package is available for use with historical orderly source repositories.  New projects should use [`orderly` version 2](https://mrc-ide.github.io/orderly/); see the [migration guide](https://mrc-ide.github.io/orderly/articles/migrating.html) for possible next steps.
 
 > 1. an attendant in a hospital responsible for the non-medical care of patients and the maintenance of order and cleanliness.
 > 2. a soldier who carries orders or performs minor tasks for an officer.
