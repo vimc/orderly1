@@ -11,7 +11,7 @@ if it can't be found from archive."></head><body>
 
     <a class="navbar-brand me-2" href="../index.html">orderly1</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">1.7.1</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">1.7.2</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -94,8 +94,8 @@ elapsed time, parameters, git info (if available), path to logfile
     <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="va">path</span> <span class="op">&lt;-</span> <span class="fu">orderly1</span><span class="fu">::</span><span class="fu"><a href="orderly_example.html">orderly_example</a></span><span class="op">(</span><span class="st">"demo"</span><span class="op">)</span></span></span>
 <span class="r-in"><span><span class="va">id</span> <span class="op">&lt;-</span> <span class="fu">orderly1</span><span class="fu">::</span><span class="fu"><a href="orderly_run.html">orderly_run</a></span><span class="op">(</span><span class="st">"minimal"</span>, root <span class="op">=</span> <span class="va">path</span><span class="op">)</span></span></span>
 <span class="r-msg co"><span class="r-pr">#&gt;</span> [ <span style="color: #5FAFD7; font-weight: bold;">name      </span> ]  minimal</span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> [ <span style="color: #5FAFD7; font-weight: bold;">id        </span> ]  20250731-134546-4ab270d3</span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> [ <span style="color: #5FAFD7; font-weight: bold;">start     </span> ]  2025-07-31 13:45:46.294117</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> [ <span style="color: #5FAFD7; font-weight: bold;">id        </span> ]  20250919-200042-a81ff3b4</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> [ <span style="color: #5FAFD7; font-weight: bold;">start     </span> ]  2025-09-19 20:00:42.659142</span>
 <span class="r-msg co"><span class="r-pr">#&gt;</span> [ <span style="color: #5FAFD7; font-weight: bold;">data      </span> ]  source =&gt; dat: 20 x 2</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> &gt; png("mygraph.png")</span>
@@ -107,12 +107,12 @@ elapsed time, parameters, git info (if available), path to logfile
 <span class="r-out co"><span class="r-pr">#&gt;</span> &gt; dev.off()</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> agg_record_927045255 </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>                    2 </span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> [ <span style="color: #5FAFD7; font-weight: bold;">end       </span> ]  2025-07-31 13:45:46.312741</span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> [ <span style="color: #5FAFD7; font-weight: bold;">elapsed   </span> ]  Ran report in 0.01862311 secs</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> [ <span style="color: #5FAFD7; font-weight: bold;">end       </span> ]  2025-09-19 20:00:42.678353</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> [ <span style="color: #5FAFD7; font-weight: bold;">elapsed   </span> ]  Ran report in 0.01921058 secs</span>
 <span class="r-msg co"><span class="r-pr">#&gt;</span> [ <span style="color: #5FAFD7; font-weight: bold;">artefact  </span> ]  mygraph.png: a7b94ccda59d3cdc6de2c3b088822f33</span>
 <span class="r-in"><span><span class="fu">orderly1</span><span class="fu">::</span><span class="fu">orderly_info</span><span class="op">(</span><span class="va">id</span>, <span class="st">"minimal"</span>, root <span class="op">=</span> <span class="va">path</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> $id</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [1] "20250731-134546-4ab270d3"</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [1] "20250919-200042-a81ff3b4"</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> $name</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> [1] "minimal"</span>
@@ -121,10 +121,10 @@ elapsed time, parameters, git info (if available), path to logfile
 <span class="r-out co"><span class="r-pr">#&gt;</span> [1] TRUE</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> $date</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [1] "2025-07-31 13:45:46.327218"</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [1] "2025-09-19 20:00:42.693782"</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> $elapsed</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [1] 0.01862311</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [1] 0.01921058</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> $git</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> NULL</span>

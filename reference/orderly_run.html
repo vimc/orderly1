@@ -17,7 +17,7 @@ it to the archive directory."></head><body>
 
     <a class="navbar-brand me-2" href="../index.html">orderly1</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">1.7.1</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">1.7.2</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -195,8 +195,8 @@ messages (not just R output)</p></div>
 <span class="r-in"><span><span class="co"># not running in the working directory, as is the case here):</span></span></span>
 <span class="r-in"><span><span class="va">id</span> <span class="op">&lt;-</span> <span class="fu">orderly1</span><span class="fu">::</span><span class="fu">orderly_run</span><span class="op">(</span><span class="st">"minimal"</span>, root <span class="op">=</span> <span class="va">path</span><span class="op">)</span></span></span>
 <span class="r-msg co"><span class="r-pr">#&gt;</span> [ <span style="color: #5FAFD7; font-weight: bold;">name      </span> ]  minimal</span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> [ <span style="color: #5FAFD7; font-weight: bold;">id        </span> ]  20250731-134552-7b624562</span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> [ <span style="color: #5FAFD7; font-weight: bold;">start     </span> ]  2025-07-31 13:45:52.484378</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> [ <span style="color: #5FAFD7; font-weight: bold;">id        </span> ]  20250919-200049-01a0e839</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> [ <span style="color: #5FAFD7; font-weight: bold;">start     </span> ]  2025-09-19 20:00:49.008724</span>
 <span class="r-msg co"><span class="r-pr">#&gt;</span> [ <span style="color: #5FAFD7; font-weight: bold;">data      </span> ]  source =&gt; dat: 20 x 2</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> &gt; png("mygraph.png")</span>
@@ -208,20 +208,20 @@ messages (not just R output)</p></div>
 <span class="r-out co"><span class="r-pr">#&gt;</span> &gt; dev.off()</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> agg_record_653975181 </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>                    2 </span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> [ <span style="color: #5FAFD7; font-weight: bold;">end       </span> ]  2025-07-31 13:45:52.503299</span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> [ <span style="color: #5FAFD7; font-weight: bold;">elapsed   </span> ]  Ran report in 0.01892066 secs</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> [ <span style="color: #5FAFD7; font-weight: bold;">end       </span> ]  2025-09-19 20:00:49.027682</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> [ <span style="color: #5FAFD7; font-weight: bold;">elapsed   </span> ]  Ran report in 0.01895809 secs</span>
 <span class="r-msg co"><span class="r-pr">#&gt;</span> [ <span style="color: #5FAFD7; font-weight: bold;">artefact  </span> ]  mygraph.png: a7b94ccda59d3cdc6de2c3b088822f33</span>
 <span class="r-in"><span></span></span>
 <span class="r-in"><span><span class="co"># Every report gets a unique identifier, based on the time (it is</span></span></span>
 <span class="r-in"><span><span class="co"># ISO 8601 time with random hex appended to end)</span></span></span>
 <span class="r-in"><span><span class="va">id</span></span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [1] "20250731-134552-7b624562"</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [1] "20250919-200049-01a0e839"</span>
 <span class="r-in"><span></span></span>
 <span class="r-in"><span><span class="co"># After being run, a report is a "draft" and will exist in the</span></span></span>
 <span class="r-in"><span><span class="co"># drafts directory:</span></span></span>
 <span class="r-in"><span><span class="fu">orderly1</span><span class="fu">::</span><span class="fu"><a href="orderly_list_drafts.html">orderly_list_drafts</a></span><span class="op">(</span>root <span class="op">=</span> <span class="va">path</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>      name                       id</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 1 minimal 20250731-134552-7b624562</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 1 minimal 20250919-200049-01a0e839</span>
 <span class="r-in"><span></span></span>
 <span class="r-in"><span><span class="co"># Draft reports are always stored in the path</span></span></span>
 <span class="r-in"><span><span class="co"># &lt;root&gt;/draft/&lt;name&gt;/&lt;id&gt;, so we have</span></span></span>
@@ -234,10 +234,10 @@ messages (not just R output)</p></div>
 <span class="r-in"><span><span class="co"># named list.</span></span></span>
 <span class="r-in"><span><span class="va">id</span> <span class="op">&lt;-</span> <span class="fu">orderly1</span><span class="fu">::</span><span class="fu">orderly_run</span><span class="op">(</span><span class="st">"other"</span>, <span class="fu"><a href="https://rdrr.io/r/base/list.html" class="external-link">list</a></span><span class="op">(</span>nmin <span class="op">=</span> <span class="fl">0.2</span><span class="op">)</span>, root <span class="op">=</span> <span class="va">path</span><span class="op">)</span></span></span>
 <span class="r-msg co"><span class="r-pr">#&gt;</span> [ <span style="color: #5FAFD7; font-weight: bold;">name      </span> ]  other</span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> [ <span style="color: #5FAFD7; font-weight: bold;">id        </span> ]  20250731-134552-88a0cdcf</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> [ <span style="color: #5FAFD7; font-weight: bold;">id        </span> ]  20250919-200049-0f3feabf</span>
 <span class="r-msg co"><span class="r-pr">#&gt;</span> [ <span style="color: #5FAFD7; font-weight: bold;">sources   </span> ]  functions.R</span>
 <span class="r-msg co"><span class="r-pr">#&gt;</span> [ <span style="color: #5FAFD7; font-weight: bold;">parameter </span> ]  nmin: 0.2</span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> [ <span style="color: #5FAFD7; font-weight: bold;">start     </span> ]  2025-07-31 13:45:52.538819</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> [ <span style="color: #5FAFD7; font-weight: bold;">start     </span> ]  2025-09-19 20:00:49.064793</span>
 <span class="r-msg co"><span class="r-pr">#&gt;</span> [ <span style="color: #5FAFD7; font-weight: bold;">data      </span> ]  source =&gt; extract: 19 x 2</span>
 <span class="r-msg co"><span class="r-pr">#&gt;</span> [ <span style="color: #5FAFD7; font-weight: bold;">parameter </span> ]  nmin: 0.2</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
@@ -254,8 +254,8 @@ messages (not just R output)</p></div>
 <span class="r-out co"><span class="r-pr">#&gt;</span> &gt; dev.off()</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> agg_record_653975181 </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>                    2 </span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> [ <span style="color: #5FAFD7; font-weight: bold;">end       </span> ]  2025-07-31 13:45:52.559182</span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> [ <span style="color: #5FAFD7; font-weight: bold;">elapsed   </span> ]  Ran report in 0.02036309 secs</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> [ <span style="color: #5FAFD7; font-weight: bold;">end       </span> ]  2025-09-19 20:00:49.085468</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> [ <span style="color: #5FAFD7; font-weight: bold;">elapsed   </span> ]  Ran report in 0.02067518 secs</span>
 <span class="r-msg co"><span class="r-pr">#&gt;</span> [ <span style="color: #5FAFD7; font-weight: bold;">artefact  </span> ]  summary.csv: 08a4566d063098080bfd318f675926f2</span>
 <span class="r-msg co"><span class="r-pr">#&gt;</span> [ <span style="color: #5FAFD7; font-weight: bold;">...       </span> ]  graph.png: cb4a12740c3645d989dfd978b09d0bd6</span>
 <span class="r-in"><span></span></span>

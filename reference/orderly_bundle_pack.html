@@ -19,7 +19,7 @@ primarily for very computationally demanding patterns."></head><body>
 
     <a class="navbar-brand me-2" href="../index.html">orderly1</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">1.7.1</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">1.7.2</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -198,29 +198,29 @@ its side effect only and does not return anything useful.</p>
 <span class="r-in"><span><span class="co"># Pack up the "example" report to go:</span></span></span>
 <span class="r-in"><span><span class="va">res</span> <span class="op">&lt;-</span> <span class="fu">orderly1</span><span class="fu">::</span><span class="fu">orderly_bundle_pack</span><span class="op">(</span><span class="va">workdir</span>, <span class="st">"example"</span>, root <span class="op">=</span> <span class="va">path</span><span class="op">)</span></span></span>
 <span class="r-msg co"><span class="r-pr">#&gt;</span> [ <span style="color: #5FAFD7; font-weight: bold;">name      </span> ]  example</span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> [ <span style="color: #5FAFD7; font-weight: bold;">id        </span> ]  20250731-134541-2b3e6451</span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> [ <span style="color: #5FAFD7; font-weight: bold;">start     </span> ]  2025-07-31 13:45:41.171261</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> [ <span style="color: #5FAFD7; font-weight: bold;">id        </span> ]  20250919-200037-63d06bc4</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> [ <span style="color: #5FAFD7; font-weight: bold;">start     </span> ]  2025-09-19 20:00:37.392268</span>
 <span class="r-msg co"><span class="r-pr">#&gt;</span> [ <span style="color: #5FAFD7; font-weight: bold;">data      </span> ]  source =&gt; dat: 20 x 2</span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> [ <span style="color: #5FAFD7; font-weight: bold;">bundle pack</span> ]  20250731-134541-2b3e6451</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> [ <span style="color: #5FAFD7; font-weight: bold;">bundle pack</span> ]  20250919-200037-63d06bc4</span>
 <span class="r-in"><span></span></span>
 <span class="r-in"><span><span class="co"># The return value is a list with the id and the path to the zip</span></span></span>
 <span class="r-in"><span><span class="co"># file created:</span></span></span>
 <span class="r-in"><span><span class="va">res</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> $id</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [1] "20250731-134541-2b3e6451"</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [1] "20250919-200037-63d06bc4"</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> $path</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [1] "/tmp/Rtmp82yBdj/file1cbfa222d3/20250731-134541-2b3e6451.zip"</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [1] "/tmp/RtmpK9O2l4/file1d50688b2a0/20250919-200037-63d06bc4.zip"</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-in"><span></span></span>
 <span class="r-in"><span><span class="co"># A list of reports bundled in this directory and their status</span></span></span>
 <span class="r-in"><span><span class="fu">orderly1</span><span class="fu">::</span><span class="fu">orderly_bundle_list</span><span class="op">(</span><span class="va">workdir</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>                         id    name parameters     status                time</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 1 20250731-134541-2b3e6451 example            incomplete 2025-07-31 13:45:41</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 1 20250919-200037-63d06bc4 example            incomplete 2025-09-19 20:00:37</span>
 <span class="r-in"><span></span></span>
 <span class="r-in"><span><span class="co"># Run the bundle (this would ordinarily be done on another computer)</span></span></span>
 <span class="r-in"><span><span class="va">zip</span> <span class="op">&lt;-</span> <span class="fu">orderly1</span><span class="fu">::</span><span class="fu">orderly_bundle_run</span><span class="op">(</span><span class="va">res</span><span class="op">$</span><span class="va">path</span>, <span class="va">workdir</span><span class="op">)</span></span></span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> [ <span style="color: #5FAFD7; font-weight: bold;">start     </span> ]  2025-07-31 13:45:41.215845</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> [ <span style="color: #5FAFD7; font-weight: bold;">start     </span> ]  2025-09-19 20:00:37.43648</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> &gt; png("mygraph.png")</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
@@ -231,35 +231,35 @@ its side effect only and does not return anything useful.</p>
 <span class="r-out co"><span class="r-pr">#&gt;</span> &gt; dev.off()</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> agg_record_2034683990 </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>                     2 </span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> [ <span style="color: #5FAFD7; font-weight: bold;">end       </span> ]  2025-07-31 13:45:41.2303</span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> [ <span style="color: #5FAFD7; font-weight: bold;">elapsed   </span> ]  Ran report in 0.01445508 secs</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> [ <span style="color: #5FAFD7; font-weight: bold;">end       </span> ]  2025-09-19 20:00:37.450903</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> [ <span style="color: #5FAFD7; font-weight: bold;">elapsed   </span> ]  Ran report in 0.01442313 secs</span>
 <span class="r-msg co"><span class="r-pr">#&gt;</span> [ <span style="color: #5FAFD7; font-weight: bold;">artefact  </span> ]  mygraph.png: a7b94ccda59d3cdc6de2c3b088822f33</span>
 <span class="r-in"><span><span class="va">zip</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> $id</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [1] "20250731-134541-2b3e6451"</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [1] "20250919-200037-63d06bc4"</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> $path</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [1] "/tmp/Rtmp82yBdj/file1cbfa222d3/20250731-134541-2b3e6451.zip"</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [1] "/tmp/RtmpK9O2l4/file1d50688b2a0/20250919-200037-63d06bc4.zip"</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> $filename</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [1] "20250731-134541-2b3e6451.zip"</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [1] "20250919-200037-63d06bc4.zip"</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-in"><span></span></span>
 <span class="r-in"><span><span class="co"># The status has now been updated to reflect the status</span></span></span>
 <span class="r-in"><span><span class="fu">orderly1</span><span class="fu">::</span><span class="fu">orderly_bundle_list</span><span class="op">(</span><span class="va">workdir</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>                         id    name parameters   status                time</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 1 20250731-134541-2b3e6451 example            complete 2025-07-31 13:45:41</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 1 20250919-200037-63d06bc4 example            complete 2025-09-19 20:00:37</span>
 <span class="r-in"><span></span></span>
 <span class="r-in"><span><span class="co"># We can import this into the orderly tree</span></span></span>
 <span class="r-in"><span><span class="fu">orderly1</span><span class="fu">::</span><span class="fu">orderly_bundle_import</span><span class="op">(</span><span class="va">zip</span><span class="op">$</span><span class="va">path</span>, root <span class="op">=</span> <span class="va">path</span><span class="op">)</span></span></span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> [ <span style="color: #5FAFD7; font-weight: bold;">import    </span> ]  example:20250731-134541-2b3e6451</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> [ <span style="color: #5FAFD7; font-weight: bold;">import    </span> ]  example:20250919-200037-63d06bc4</span>
 <span class="r-in"><span></span></span>
 <span class="r-in"><span><span class="co"># This has now been included in your orderly archive and the</span></span></span>
 <span class="r-in"><span><span class="co"># workdir can be safely deleted</span></span></span>
 <span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/base/unlink.html" class="external-link">unlink</a></span><span class="op">(</span><span class="va">workdir</span>, recursive <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></span></span>
 <span class="r-in"><span><span class="fu">orderly1</span><span class="fu">::</span><span class="fu"><a href="orderly_list_drafts.html">orderly_list_archive</a></span><span class="op">(</span><span class="va">path</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>      name                       id</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 1 example 20250731-134541-2b3e6451</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 1 example 20250919-200037-63d06bc4</span>
 </code></pre></div>
     </div>
   </main><aside class="col-md-3"><nav id="toc" aria-label="Table of contents"><h2>On this page</h2>

@@ -9,7 +9,7 @@ columns name (see orderly_list()) and id."></head><body>
 
     <a class="navbar-brand me-2" href="../index.html">orderly1</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">1.7.1</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">1.7.2</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -110,8 +110,8 @@ which returns the id of the most recent report.</p></div>
 <span class="r-in"><span><span class="co"># Run a report twice:</span></span></span>
 <span class="r-in"><span><span class="va">id1</span> <span class="op">&lt;-</span> <span class="fu">orderly1</span><span class="fu">::</span><span class="fu"><a href="orderly_run.html">orderly_run</a></span><span class="op">(</span><span class="st">"minimal"</span>, root <span class="op">=</span> <span class="va">path</span><span class="op">)</span></span></span>
 <span class="r-msg co"><span class="r-pr">#&gt;</span> [ <span style="color: #5FAFD7; font-weight: bold;">name      </span> ]  minimal</span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> [ <span style="color: #5FAFD7; font-weight: bold;">id        </span> ]  20250731-134547-c9f2dece</span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> [ <span style="color: #5FAFD7; font-weight: bold;">start     </span> ]  2025-07-31 13:45:47.791219</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> [ <span style="color: #5FAFD7; font-weight: bold;">id        </span> ]  20250919-200044-1c1255b1</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> [ <span style="color: #5FAFD7; font-weight: bold;">start     </span> ]  2025-09-19 20:00:44.112055</span>
 <span class="r-msg co"><span class="r-pr">#&gt;</span> [ <span style="color: #5FAFD7; font-weight: bold;">data      </span> ]  source =&gt; dat: 20 x 2</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> &gt; png("mygraph.png")</span>
@@ -123,13 +123,13 @@ which returns the id of the most recent report.</p></div>
 <span class="r-out co"><span class="r-pr">#&gt;</span> &gt; dev.off()</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> agg_record_562870578 </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>                    2 </span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> [ <span style="color: #5FAFD7; font-weight: bold;">end       </span> ]  2025-07-31 13:45:47.809743</span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> [ <span style="color: #5FAFD7; font-weight: bold;">elapsed   </span> ]  Ran report in 0.01852393 secs</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> [ <span style="color: #5FAFD7; font-weight: bold;">end       </span> ]  2025-09-19 20:00:44.130935</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> [ <span style="color: #5FAFD7; font-weight: bold;">elapsed   </span> ]  Ran report in 0.01887965 secs</span>
 <span class="r-msg co"><span class="r-pr">#&gt;</span> [ <span style="color: #5FAFD7; font-weight: bold;">artefact  </span> ]  mygraph.png: a7b94ccda59d3cdc6de2c3b088822f33</span>
 <span class="r-in"><span><span class="va">id2</span> <span class="op">&lt;-</span> <span class="fu">orderly1</span><span class="fu">::</span><span class="fu"><a href="orderly_run.html">orderly_run</a></span><span class="op">(</span><span class="st">"minimal"</span>, root <span class="op">=</span> <span class="va">path</span><span class="op">)</span></span></span>
 <span class="r-msg co"><span class="r-pr">#&gt;</span> [ <span style="color: #5FAFD7; font-weight: bold;">name      </span> ]  minimal</span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> [ <span style="color: #5FAFD7; font-weight: bold;">id        </span> ]  20250731-134547-d5ba4b0a</span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> [ <span style="color: #5FAFD7; font-weight: bold;">start     </span> ]  2025-07-31 13:45:47.837176</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> [ <span style="color: #5FAFD7; font-weight: bold;">id        </span> ]  20250919-200044-280692a8</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> [ <span style="color: #5FAFD7; font-weight: bold;">start     </span> ]  2025-09-19 20:00:44.158638</span>
 <span class="r-msg co"><span class="r-pr">#&gt;</span> [ <span style="color: #5FAFD7; font-weight: bold;">data      </span> ]  source =&gt; dat: 20 x 2</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> &gt; png("mygraph.png")</span>
@@ -141,15 +141,15 @@ which returns the id of the most recent report.</p></div>
 <span class="r-out co"><span class="r-pr">#&gt;</span> &gt; dev.off()</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> agg_record_562870578 </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>                    2 </span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> [ <span style="color: #5FAFD7; font-weight: bold;">end       </span> ]  2025-07-31 13:45:47.855597</span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> [ <span style="color: #5FAFD7; font-weight: bold;">elapsed   </span> ]  Ran report in 0.0184207 secs</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> [ <span style="color: #5FAFD7; font-weight: bold;">end       </span> ]  2025-09-19 20:00:44.182444</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> [ <span style="color: #5FAFD7; font-weight: bold;">elapsed   </span> ]  Ran report in 0.02380633 secs</span>
 <span class="r-msg co"><span class="r-pr">#&gt;</span> [ <span style="color: #5FAFD7; font-weight: bold;">artefact  </span> ]  mygraph.png: a7b94ccda59d3cdc6de2c3b088822f33</span>
 <span class="r-in"><span></span></span>
 <span class="r-in"><span><span class="co"># We can see both drafts:</span></span></span>
 <span class="r-in"><span><span class="fu">orderly1</span><span class="fu">::</span><span class="fu">orderly_list_drafts</span><span class="op">(</span><span class="va">path</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>      name                       id</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 1 minimal 20250731-134547-c9f2dece</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 2 minimal 20250731-134547-d5ba4b0a</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 1 minimal 20250919-200044-1c1255b1</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 2 minimal 20250919-200044-280692a8</span>
 <span class="r-in"><span></span></span>
 <span class="r-in"><span><span class="co"># Nothing is in the archive:</span></span></span>
 <span class="r-in"><span><span class="fu">orderly1</span><span class="fu">::</span><span class="fu">orderly_list_archive</span><span class="op">(</span><span class="va">path</span><span class="op">)</span></span></span>
@@ -158,21 +158,21 @@ which returns the id of the most recent report.</p></div>
 <span class="r-in"><span></span></span>
 <span class="r-in"><span><span class="co"># Commit a report:</span></span></span>
 <span class="r-in"><span><span class="fu">orderly1</span><span class="fu">::</span><span class="fu"><a href="orderly_commit.html">orderly_commit</a></span><span class="op">(</span><span class="va">id2</span>, root <span class="op">=</span> <span class="va">path</span><span class="op">)</span></span></span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> [ <span style="color: #5FAFD7; font-weight: bold;">commit    </span> ]  minimal/20250731-134547-d5ba4b0a</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> [ <span style="color: #5FAFD7; font-weight: bold;">commit    </span> ]  minimal/20250919-200044-280692a8</span>
 <span class="r-msg co"><span class="r-pr">#&gt;</span> [ <span style="color: #5FAFD7; font-weight: bold;">copy      </span> ]</span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> [ <span style="color: #5FAFD7; font-weight: bold;">import    </span> ]  minimal:20250731-134547-d5ba4b0a</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> [ <span style="color: #5FAFD7; font-weight: bold;">import    </span> ]  minimal:20250919-200044-280692a8</span>
 <span class="r-msg co"><span class="r-pr">#&gt;</span> [ <span style="color: #5FAFD7; font-weight: bold;">success   </span> ]  :)</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [1] "/tmp/Rtmp82yBdj/file1cbf1aa2415c/archive/minimal/20250731-134547-d5ba4b0a"</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [1] "/tmp/RtmpK9O2l4/file1d50409b56da/archive/minimal/20250919-200044-280692a8"</span>
 <span class="r-in"><span></span></span>
 <span class="r-in"><span><span class="co"># Only one draft now</span></span></span>
 <span class="r-in"><span><span class="fu">orderly1</span><span class="fu">::</span><span class="fu">orderly_list_drafts</span><span class="op">(</span><span class="va">path</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>      name                       id</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 1 minimal 20250731-134547-c9f2dece</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 1 minimal 20250919-200044-1c1255b1</span>
 <span class="r-in"><span></span></span>
 <span class="r-in"><span><span class="co"># And the second report is in the archive:</span></span></span>
 <span class="r-in"><span><span class="fu">orderly1</span><span class="fu">::</span><span class="fu">orderly_list_archive</span><span class="op">(</span><span class="va">path</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>      name                       id</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 1 minimal 20250731-134547-d5ba4b0a</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 1 minimal 20250919-200044-280692a8</span>
 </code></pre></div>
     </div>
   </main><aside class="col-md-3"><nav id="toc" aria-label="Table of contents"><h2>On this page</h2>

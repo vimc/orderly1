@@ -20,7 +20,7 @@
 
     <a class="navbar-brand me-2" href="../index.html">orderly1</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">1.7.1</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">1.7.2</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -64,7 +64,7 @@
                         <h4 data-toc-skip class="author">Rich
 FitzJohn</h4>
             
-            <h4 data-toc-skip class="date">2025-07-31</h4>
+            <h4 data-toc-skip class="date">2025-09-19</h4>
       
       <small class="dont-index">Source: <a href="https://github.com/vimc/orderly/blob/main/vignettes/orderly.Rmd" class="external-link"><code>vignettes/orderly.Rmd</code></a></small>
       <div class="d-none name"><code>orderly.Rmd</code></div>
@@ -236,8 +236,8 @@ we use a temporary directory):</p>
 <code class="sourceCode R"><span><span class="va">id</span> <span class="op">&lt;-</span> <span class="fu">orderly1</span><span class="fu">::</span><span class="fu"><a href="../reference/orderly_run.html">orderly_run</a></span><span class="op">(</span><span class="st">"example"</span>, root <span class="op">=</span> <span class="va">path</span><span class="op">)</span></span></code></pre></div>
 <pre><code><span><span class="co">## [ <span style="color: #5FAFD7; font-weight: bold;">info      </span> ]  Writing initial orderly archive version as 1.1.25</span></span></code></pre>
 <pre><code><span><span class="co">## [ <span style="color: #5FAFD7; font-weight: bold;">name      </span> ]  example</span></span></code></pre>
-<pre><code><span><span class="co">## [ <span style="color: #5FAFD7; font-weight: bold;">id        </span> ]  20250731-134602-97dbd405</span></span></code></pre>
-<pre><code><span><span class="co">## [ <span style="color: #5FAFD7; font-weight: bold;">start     </span> ]  2025-07-31 13:46:02.611465</span></span></code></pre>
+<pre><code><span><span class="co">## [ <span style="color: #5FAFD7; font-weight: bold;">id        </span> ]  20250919-200059-3eec0172</span></span></code></pre>
+<pre><code><span><span class="co">## [ <span style="color: #5FAFD7; font-weight: bold;">start     </span> ]  2025-09-19 20:00:59.263501</span></span></code></pre>
 <pre><code><span><span class="co">## </span></span>
 <span><span class="co">## &gt; dat &lt;- data.frame(x = 1:10, y = runif(10))</span></span>
 <span><span class="co">## </span></span>
@@ -250,8 +250,8 @@ we use a temporary directory):</p>
 <span><span class="co">## &gt; dev.off()</span></span>
 <span><span class="co">## agg_png </span></span>
 <span><span class="co">##       2</span></span></code></pre>
-<pre><code><span><span class="co">## [ <span style="color: #5FAFD7; font-weight: bold;">end       </span> ]  2025-07-31 13:46:02.634993</span></span></code></pre>
-<pre><code><span><span class="co">## [ <span style="color: #5FAFD7; font-weight: bold;">elapsed   </span> ]  Ran report in 0.02352834 secs</span></span></code></pre>
+<pre><code><span><span class="co">## [ <span style="color: #5FAFD7; font-weight: bold;">end       </span> ]  2025-09-19 20:00:59.287189</span></span></code></pre>
+<pre><code><span><span class="co">## [ <span style="color: #5FAFD7; font-weight: bold;">elapsed   </span> ]  Ran report in 0.02368808 secs</span></span></code></pre>
 <pre><code><span><span class="co">## [ <span style="color: #5FAFD7; font-weight: bold;">artefact  </span> ]  mygraph.png: b25d8a0501269f3a7d84ab08ecad0d2f</span></span>
 <span><span class="co">## [ <span style="color: #5FAFD7; font-weight: bold;">...       </span> ]  mydata.csv: 06c47bc58a76433339cbab440a7890da</span></span></code></pre>
 <p>The return value is the id of the report (also printed on the third
@@ -261,13 +261,13 @@ hex digits (i.e., 4 random bytes). This means reports will automatically
 sort nicely but we’ll have some collision resistance.</p>
 <div class="sourceCode" id="cb14"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">id</span></span></code></pre></div>
-<pre><code><span><span class="co">## [1] "20250731-134602-97dbd405"</span></span></code></pre>
+<pre><code><span><span class="co">## [1] "20250919-200059-3eec0172"</span></span></code></pre>
 <p>Having run the report, the directory layout now looks like:</p>
 <pre><code> [01;34m. [0m
 ├──  [01;34marchive [0m
 ├──  [01;34mdraft [0m
 │   └──  [01;34mexample [0m
-│       └──  [01;34m20250731-134602-97dbd405 [0m
+│       └──  [01;34m20250919-200059-3eec0172 [0m
 │           ├── mydata.csv
 │           ├──  [01;35mmygraph.png [0m
 │           ├── orderly.yml
@@ -279,7 +279,7 @@ sort nicely but we’ll have some collision resistance.</p>
         ├── orderly.yml
         └──  [32mscript.R [0m</code></pre>
 <p>Within <code>drafts</code>, the directory
-<code>example/20250731-134602-97dbd405</code> has been created which
+<code>example/20250919-200059-3eec0172</code> has been created which
 contains the result of running the report. In here there are the
 files:</p>
 <ul>
@@ -299,7 +299,7 @@ stored in R’s internal data format.</li>
 </ul>
 <p>Every time a report is run it will create a new directory at this
 level with a new id. Running the report again now might create the
-directory <code>example/20250731-134602-db4e55b4</code></p>
+directory <code>example/20250919-200059-8229ac29</code></p>
 <p>We store the copies of files as run by <code>orderly</code> so that
 even if the input files change we can still easily get back to previous
 versions of the inputs, alongside the outputs, and these are safe from
@@ -308,20 +308,20 @@ any changes to the underlying source.</p>
 <div class="sourceCode" id="cb17"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu">orderly1</span><span class="fu">::</span><span class="fu"><a href="../reference/orderly_list_drafts.html">orderly_list_drafts</a></span><span class="op">(</span>root <span class="op">=</span> <span class="va">path</span><span class="op">)</span></span></code></pre></div>
 <pre><code><span><span class="co">##      name                       id</span></span>
-<span><span class="co">## 1 example 20250731-134602-97dbd405</span></span></code></pre>
+<span><span class="co">## 1 example 20250919-200059-3eec0172</span></span></code></pre>
 <p>Once you’re happy with a report, then “commit” it with</p>
 <div class="sourceCode" id="cb19"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu">orderly1</span><span class="fu">::</span><span class="fu"><a href="../reference/orderly_commit.html">orderly_commit</a></span><span class="op">(</span><span class="va">id</span>, root <span class="op">=</span> <span class="va">path</span><span class="op">)</span></span>
-<span><span class="co">## [ <span style="color: #5FAFD7; font-weight: bold;">commit    </span> ]  example/20250731-134602-97dbd405</span></span>
+<span><span class="co">## [ <span style="color: #5FAFD7; font-weight: bold;">commit    </span> ]  example/20250919-200059-3eec0172</span></span>
 <span><span class="co">## [ <span style="color: #5FAFD7; font-weight: bold;">copy      </span> ]</span></span>
-<span><span class="co">## [ <span style="color: #5FAFD7; font-weight: bold;">import    </span> ]  example:20250731-134602-97dbd405</span></span>
+<span><span class="co">## [ <span style="color: #5FAFD7; font-weight: bold;">import    </span> ]  example:20250919-200059-3eec0172</span></span>
 <span><span class="co">## [ <span style="color: #5FAFD7; font-weight: bold;">success   </span> ]  :)</span></span>
-<span><span class="co">## [1] "/tmp/RtmpZ65PQc/file205b5745b486/archive/example/20250731-134602-97dbd405"</span></span></code></pre></div>
+<span><span class="co">## [1] "/tmp/RtmpuqxqvC/file20eb755d772d/archive/example/20250919-200059-3eec0172"</span></span></code></pre></div>
 <p>After this step our directory structure looks like:</p>
 <pre><code> [01;34m. [0m
 ├──  [01;34marchive [0m
 │   └──  [01;34mexample [0m
-│       └──  [01;34m20250731-134602-97dbd405 [0m
+│       └──  [01;34m20250919-200059-3eec0172 [0m
 │           ├── mydata.csv
 │           ├──  [01;35mmygraph.png [0m
 │           ├── orderly.yml
@@ -356,13 +356,13 @@ you’ll lose a chain of history), then edit the file
 <code>orderly.yml</code> within that directory.</p>
 <div class="sourceCode" id="cb21"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu">orderly1</span><span class="fu">::</span><span class="fu"><a href="../reference/orderly_new.html">orderly_new</a></span><span class="op">(</span><span class="st">"new"</span>, root <span class="op">=</span> <span class="va">path</span><span class="op">)</span></span></code></pre></div>
-<pre><code><span><span class="co">## Created report at '/tmp/RtmpZ65PQc/file205b5745b486/src/new'</span></span></code></pre>
+<pre><code><span><span class="co">## Created report at '/tmp/RtmpuqxqvC/file20eb755d772d/src/new'</span></span></code></pre>
 <pre><code><span><span class="co">## Edit the file 'orderly.yml' within this directory</span></span></code></pre>
 <p>which results in a directory structure like:</p>
 <pre><code> [01;34m. [0m
 ├──  [01;34marchive [0m
 │   └──  [01;34mexample [0m
-│       └──  [01;34m20250731-134602-97dbd405 [0m
+│       └──  [01;34m20250919-200059-3eec0172 [0m
 │           ├── mydata.csv
 │           ├──  [01;35mmygraph.png [0m
 │           ├── orderly.yml
@@ -572,7 +572,7 @@ file.</p>
 <p>This process can be automated by running</p>
 <div class="sourceCode" id="cb38"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu">orderly1</span><span class="fu">::</span><span class="fu"><a href="../reference/orderly_use.html">orderly_use_gitignore</a></span><span class="op">(</span>root <span class="op">=</span> <span class="va">path</span>, prompt <span class="op">=</span> <span class="cn">FALSE</span><span class="op">)</span></span></code></pre></div>
-<pre><code><span><span class="co">## Changes to '/tmp/RtmpZ65PQc/file205b5745b486/.gitignore'</span></span></code></pre>
+<pre><code><span><span class="co">## Changes to '/tmp/RtmpuqxqvC/file20eb755d772d/.gitignore'</span></span></code></pre>
 <pre><code><span><span class="co">## <span style="color: #B2B2B2; font-weight: bold;"> 1</span> | <span style="font-weight: bold;"># These are directories where orderly stores (potentially large)</span></span></span>
 <span><span class="co">## <span style="color: #B2B2B2; font-weight: bold;"> 2</span> | <span style="font-weight: bold;"># generated files - you definitely do not want these in git.</span></span></span>
 <span><span class="co">## <span style="color: #B2B2B2; font-weight: bold;"> 3</span> | <span style="font-weight: bold;">data</span></span></span>
@@ -597,7 +597,7 @@ file.</p>
 <span><span class="co">## <span style="color: #B2B2B2; font-weight: bold;">22</span> | <span style="font-weight: bold;"># Created by orderly.server</span></span></span>
 <span><span class="co">## <span style="color: #B2B2B2; font-weight: bold;">23</span> | <span style="font-weight: bold;">runner</span></span></span>
 <span><span class="co">## <span style="color: #B2B2B2; font-weight: bold;">24</span> | <span style="font-weight: bold;">backup</span></span></span></code></pre>
-<pre><code><span><span class="co">## Writing to '/tmp/RtmpZ65PQc/file205b5745b486/.gitignore'</span></span></code></pre>
+<pre><code><span><span class="co">## Writing to '/tmp/RtmpuqxqvC/file20eb755d772d/.gitignore'</span></span></code></pre>
 <p>(the default, <code>prompt = TRUE</code> will request user
 confirmation before writing the <code>.gitignore</code> file).</p>
 <p>You should arrange to back up the entire orderly directory through
@@ -945,7 +945,7 @@ orderly tree from before:</p>
 <pre><code> [01;34m. [0m
 ├──  [01;34marchive [0m
 │   └──  [01;34mexample [0m
-│       └──  [01;34m20250731-134602-97dbd405 [0m
+│       └──  [01;34m20250919-200059-3eec0172 [0m
 │           ├── mydata.csv
 │           ├──  [01;35mmygraph.png [0m
 │           ├── orderly.yml
@@ -984,7 +984,7 @@ and impractical if the report is slow to run. So we can run instead:</p>
 <div class="sourceCode" id="cb68"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu">orderly1</span><span class="fu">::</span><span class="fu"><a href="../reference/orderly_develop_start.html">orderly_develop_start</a></span><span class="op">(</span><span class="st">"new"</span>, root <span class="op">=</span> <span class="va">path</span><span class="op">)</span></span></code></pre></div>
 <pre><code><span><span class="co">## [ <span style="color: #5FAFD7; font-weight: bold;">name      </span> ]  new</span></span></code></pre>
-<pre><code><span><span class="co">## [ <span style="color: #5FAFD7; font-weight: bold;">depends   </span> ]  example@20250731-134602-97dbd405:mydata.csv -&gt; data.csv</span></span></code></pre>
+<pre><code><span><span class="co">## [ <span style="color: #5FAFD7; font-weight: bold;">depends   </span> ]  example@20250919-200059-3eec0172:mydata.csv -&gt; data.csv</span></span></code></pre>
 <p>which copies in the required artefact and we can then change the
 directory (using something like <code>setwd("src/new")</code>) and start
 working on the report directly.</p>
@@ -1036,8 +1036,8 @@ you can update the file by running
 <div class="sourceCode" id="cb79"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">id</span> <span class="op">&lt;-</span> <span class="fu">orderly1</span><span class="fu">::</span><span class="fu"><a href="../reference/orderly_run.html">orderly_run</a></span><span class="op">(</span><span class="st">"example"</span>, root <span class="op">=</span> <span class="va">path</span><span class="op">)</span></span></code></pre></div>
 <pre><code><span><span class="co">## [ <span style="color: #5FAFD7; font-weight: bold;">name      </span> ]  example</span></span></code></pre>
-<pre><code><span><span class="co">## [ <span style="color: #5FAFD7; font-weight: bold;">id        </span> ]  20250731-134604-281f3533</span></span></code></pre>
-<pre><code><span><span class="co">## [ <span style="color: #5FAFD7; font-weight: bold;">start     </span> ]  2025-07-31 13:46:04.162584</span></span></code></pre>
+<pre><code><span><span class="co">## [ <span style="color: #5FAFD7; font-weight: bold;">id        </span> ]  20250919-200100-d220e778</span></span></code></pre>
+<pre><code><span><span class="co">## [ <span style="color: #5FAFD7; font-weight: bold;">start     </span> ]  2025-09-19 20:01:00.825118</span></span></code></pre>
 <pre><code><span><span class="co">## </span></span>
 <span><span class="co">## &gt; dat &lt;- data.frame(x = 1:10, y = runif(10))</span></span>
 <span><span class="co">## </span></span>
@@ -1050,23 +1050,23 @@ you can update the file by running
 <span><span class="co">## &gt; dev.off()</span></span>
 <span><span class="co">## agg_png </span></span>
 <span><span class="co">##       2</span></span></code></pre>
-<pre><code><span><span class="co">## [ <span style="color: #5FAFD7; font-weight: bold;">end       </span> ]  2025-07-31 13:46:04.176684</span></span></code></pre>
-<pre><code><span><span class="co">## [ <span style="color: #5FAFD7; font-weight: bold;">elapsed   </span> ]  Ran report in 0.01410007 secs</span></span></code></pre>
+<pre><code><span><span class="co">## [ <span style="color: #5FAFD7; font-weight: bold;">end       </span> ]  2025-09-19 20:01:00.838814</span></span></code></pre>
+<pre><code><span><span class="co">## [ <span style="color: #5FAFD7; font-weight: bold;">elapsed   </span> ]  Ran report in 0.01369572 secs</span></span></code></pre>
 <pre><code><span><span class="co">## [ <span style="color: #5FAFD7; font-weight: bold;">artefact  </span> ]  mygraph.png: dbb9406e8e76ac70c55a536dad09bf29</span></span>
 <span><span class="co">## [ <span style="color: #5FAFD7; font-weight: bold;">...       </span> ]  mydata.csv: 56c72fa953de3fc2cae83af5ce3ad049</span></span></code></pre>
 <div class="sourceCode" id="cb88"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu">orderly1</span><span class="fu">::</span><span class="fu"><a href="../reference/orderly_commit.html">orderly_commit</a></span><span class="op">(</span><span class="va">id</span>, root <span class="op">=</span> <span class="va">path</span><span class="op">)</span></span></code></pre></div>
-<pre><code><span><span class="co">## [ <span style="color: #5FAFD7; font-weight: bold;">commit    </span> ]  example/20250731-134604-281f3533</span></span></code></pre>
+<pre><code><span><span class="co">## [ <span style="color: #5FAFD7; font-weight: bold;">commit    </span> ]  example/20250919-200100-d220e778</span></span></code></pre>
 <pre><code><span><span class="co">## [ <span style="color: #5FAFD7; font-weight: bold;">copy      </span> ]</span></span></code></pre>
-<pre><code><span><span class="co">## [ <span style="color: #5FAFD7; font-weight: bold;">import    </span> ]  example:20250731-134604-281f3533</span></span></code></pre>
+<pre><code><span><span class="co">## [ <span style="color: #5FAFD7; font-weight: bold;">import    </span> ]  example:20250919-200100-d220e778</span></span></code></pre>
 <pre><code><span><span class="co">## [ <span style="color: #5FAFD7; font-weight: bold;">success   </span> ]  :)</span></span></code></pre>
-<pre><code><span><span class="co">## [1] "/tmp/RtmpZ65PQc/file205b5745b486/archive/example/20250731-134604-281f3533"</span></span></code></pre>
+<pre><code><span><span class="co">## [1] "/tmp/RtmpuqxqvC/file20eb755d772d/archive/example/20250919-200100-d220e778"</span></span></code></pre>
 <div class="sourceCode" id="cb94"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu">orderly1</span><span class="fu">::</span><span class="fu"><a href="../reference/orderly_develop_start.html">orderly_develop_start</a></span><span class="op">(</span><span class="op">)</span></span></code></pre></div>
 <pre><code><span><span class="co">## [ <span style="color: #5FAFD7; font-weight: bold;">name      </span> ]  new</span></span></code></pre>
-<pre><code><span><span class="co">## [ <span style="color: #5FAFD7; font-weight: bold;">depends   </span> ]  example@20250731-134604-281f3533:mydata.csv -&gt; data.csv</span></span></code></pre>
+<pre><code><span><span class="co">## [ <span style="color: #5FAFD7; font-weight: bold;">depends   </span> ]  example@20250919-200100-d220e778:mydata.csv -&gt; data.csv</span></span></code></pre>
 <p>(note that this has updated <code>data.csv</code> to use this new id
-20250731-134604-281f3533).</p>
+20250919-200100-d220e778).</p>
 <p>Finally, you can delete the files that orderly has copied into the
 source tree:</p>
 <div class="sourceCode" id="cb97"><pre class="downlit sourceCode r">

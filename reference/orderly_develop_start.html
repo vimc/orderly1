@@ -31,7 +31,7 @@ orderly_develop_clean deletes all copied files."></head><body>
 
     <a class="navbar-brand me-2" href="../index.html">orderly1</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">1.7.1</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">1.7.2</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -219,21 +219,21 @@ without warning.</p>
 <span class="r-in"><span><span class="co"># Copy the required dependencies over, in this case from a draft report</span></span></span>
 <span class="r-in"><span><span class="fu">orderly1</span><span class="fu">::</span><span class="fu"><a href="orderly_run.html">orderly_run</a></span><span class="op">(</span><span class="st">"other"</span>, <span class="fu"><a href="https://rdrr.io/r/base/list.html" class="external-link">list</a></span><span class="op">(</span>nmin <span class="op">=</span> <span class="fl">0</span><span class="op">)</span>, root <span class="op">=</span> <span class="va">path</span>, echo <span class="op">=</span> <span class="cn">FALSE</span><span class="op">)</span></span></span>
 <span class="r-msg co"><span class="r-pr">#&gt;</span> [ <span style="color: #5FAFD7; font-weight: bold;">name      </span> ]  other</span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> [ <span style="color: #5FAFD7; font-weight: bold;">id        </span> ]  20250731-134544-e77e5b16</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> [ <span style="color: #5FAFD7; font-weight: bold;">id        </span> ]  20250919-200041-4102199a</span>
 <span class="r-msg co"><span class="r-pr">#&gt;</span> [ <span style="color: #5FAFD7; font-weight: bold;">sources   </span> ]  functions.R</span>
 <span class="r-msg co"><span class="r-pr">#&gt;</span> [ <span style="color: #5FAFD7; font-weight: bold;">parameter </span> ]  nmin: 0</span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> [ <span style="color: #5FAFD7; font-weight: bold;">start     </span> ]  2025-07-31 13:45:44.909425</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> [ <span style="color: #5FAFD7; font-weight: bold;">start     </span> ]  2025-09-19 20:00:41.259129</span>
 <span class="r-msg co"><span class="r-pr">#&gt;</span> [ <span style="color: #5FAFD7; font-weight: bold;">data      </span> ]  source =&gt; extract: 20 x 2</span>
 <span class="r-msg co"><span class="r-pr">#&gt;</span> [ <span style="color: #5FAFD7; font-weight: bold;">parameter </span> ]  nmin: 0</span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> [ <span style="color: #5FAFD7; font-weight: bold;">end       </span> ]  2025-07-31 13:45:44.929946</span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> [ <span style="color: #5FAFD7; font-weight: bold;">elapsed   </span> ]  Ran report in 0.0205214 secs</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> [ <span style="color: #5FAFD7; font-weight: bold;">end       </span> ]  2025-09-19 20:00:41.284002</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> [ <span style="color: #5FAFD7; font-weight: bold;">elapsed   </span> ]  Ran report in 0.02487302 secs</span>
 <span class="r-msg co"><span class="r-pr">#&gt;</span> [ <span style="color: #5FAFD7; font-weight: bold;">artefact  </span> ]  summary.csv: 3fac8347e152c84c96e6676413c718b7</span>
 <span class="r-msg co"><span class="r-pr">#&gt;</span> [ <span style="color: #5FAFD7; font-weight: bold;">...       </span> ]  graph.png: 67b3e662440b3978ee78b9d4cc159884</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [1] "20250731-134544-e77e5b16"</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [1] "20250919-200041-4102199a"</span>
 <span class="r-in"><span><span class="fu">orderly1</span><span class="fu">::</span><span class="fu">orderly_develop_start</span><span class="op">(</span><span class="st">"use_dependency"</span>, root <span class="op">=</span> <span class="va">path</span>,</span></span>
 <span class="r-in"><span>                               use_draft <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></span></span>
 <span class="r-msg co"><span class="r-pr">#&gt;</span> [ <span style="color: #5FAFD7; font-weight: bold;">name      </span> ]  use_dependency</span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> [ <span style="color: #5FAFD7; font-weight: bold;">depends   </span> ]  other@20250731-134544-e77e5b16:summary.csv -&gt; incoming.csv</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> [ <span style="color: #5FAFD7; font-weight: bold;">depends   </span> ]  other@20250919-200041-4102199a:summary.csv -&gt; incoming.csv</span>
 <span class="r-in"><span></span></span>
 <span class="r-in"><span><span class="co"># Files have been copied across into the source directory</span></span></span>
 <span class="r-in"><span><span class="fu">orderly1</span><span class="fu">::</span><span class="fu">orderly_develop_status</span><span class="op">(</span><span class="st">"use_dependency"</span>, root <span class="op">=</span> <span class="va">path</span><span class="op">)</span></span></span>
