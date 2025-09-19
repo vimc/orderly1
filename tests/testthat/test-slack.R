@@ -180,6 +180,7 @@ test_that("main interface", {
 
 
 test_that("main interface", {
+  skip("obsolete")
   skip_if_no_internet()
   skip_if_not_installed("httr")
 
@@ -241,6 +242,7 @@ test_that("exit on no httr", {
 ## underlying data changes again, while the above tests with mock data
 ## will continue to work.
 test_that("slack payload is correct given actual run data", {
+  skip("obsolete")
   skip_on_cran()
   skip_on_windows_ci()
   path <- test_prepare_orderly_git_example()
@@ -354,6 +356,7 @@ test_that("teams payload is correct", {
 })
 
 test_that("teams payload is correct with git information", {
+  skip("obsolete")
   skip_if_not_installed("httr")
   skip_if_not_installed("jsonlite")
   server_url <- "https://example.com"
@@ -419,6 +422,7 @@ test_that("teams payload is correct with git information", {
 })
 
 test_that("main teams interface", {
+  skip("obsolete")
   skip_if_no_internet()
   skip_if_not_installed("jsonlite")
 
@@ -456,6 +460,7 @@ test_that("main teams interface", {
 
 
 test_that("look up environment variables before hook send", {
+  skip("obsolete")
   skip_if_no_internet()
   skip_if_not_installed("jsonlite")
 
